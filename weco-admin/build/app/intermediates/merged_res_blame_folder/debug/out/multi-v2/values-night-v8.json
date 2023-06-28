@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

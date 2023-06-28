@@ -13,68 +13,68 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:6:5-67
-15-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:6:22-64
+15-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:6:5-67
+15-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:6:22-64
 16    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-16-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:3:5-77
-16-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:3:22-75
+16-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:3:5-77
+16-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:3:22-75
 17    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
-17-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:4:5-80
-17-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:4:22-77
+17-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:4:5-80
+17-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:4:22-77
 18    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-18-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:5:5-75
-18-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:5:22-72
+18-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:5:5-75
+18-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:5:22-72
 19    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-19-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:7:5-81
-19-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:7:22-78
+19-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:7:5-81
+19-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:7:22-78
 20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-20-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:8:5-79
-20-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:8:22-76
+20-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:8:5-79
+20-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:8:22-76
 21    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-21-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:9:5-76
-21-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:9:22-73
+21-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:9:5-76
+21-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:9:22-73
 22    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-22-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:10:5-80
-22-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:10:22-78
+22-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:10:5-80
+22-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:10:22-78
 23    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-23-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:11:5-79
-23-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:11:22-77
+23-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:11:5-79
+23-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:11:22-77
 24    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
-24-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:12:5-79
-24-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:12:22-77
+24-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:12:5-79
+24-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:12:22-77
 25    <uses-permission android:name="android.permission.CAMERA" />
-25-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:13:5-65
-25-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:13:22-62
+25-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:13:5-65
+25-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:13:22-62
 26    <uses-permission android:name="android.permission.FLASHLIGHT" />
-26-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:14:5-69
-26-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:14:22-66
+26-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:14:5-69
+26-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:14:22-66
 27    <uses-permission android:name="android.permission.NFC" />
-27-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:15:5-62
-27-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:15:22-59
+27-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:15:5-62
+27-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:15:22-59
 28    <uses-permission android:name="android.permission.VIBRATE" />
-28-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:16:5-65
-28-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:16:22-63
+28-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:16:5-65
+28-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:16:22-63
 29    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-29-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:17:5-79
-29-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:17:22-76
+29-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:17:5-79
+29-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:17:22-76
 30    <uses-permission android:name="android.permission.NFC" />
-30-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:15:5-62
-30-->/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/android/app/src/main/AndroidManifest.xml:15:22-59
+30-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:15:5-62
+30-->/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/android/app/src/main/AndroidManifest.xml:15:22-59
 31    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
-31-->[:ota_update] /Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/build/ota_update/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-83
-31-->[:ota_update] /Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/build/ota_update/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-80
+31-->[:ota_update] /Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/build/ota_update/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-83
+31-->[:ota_update] /Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/build/ota_update/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-80
 32
 33    <queries>
-33-->[:file_picker] /Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-17:15
+33-->[:file_picker] /Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-17:15
 34        <intent>
-34-->[:file_picker] /Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-16:18
+34-->[:file_picker] /Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-16:18
 35            <action android:name="android.intent.action.GET_CONTENT" />
-35-->[:file_picker] /Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-72
-35-->[:file_picker] /Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:13:21-69
+35-->[:file_picker] /Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-72
+35-->[:file_picker] /Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:13:21-69
 36
 37            <data android:mimeType="*/*" />
-37-->[:file_picker] /Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-44
-37-->[:file_picker] /Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:15:19-41
+37-->[:file_picker] /Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-44
+37-->[:file_picker] /Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:15:19-41
 38        </intent>
 39    </queries>
 40

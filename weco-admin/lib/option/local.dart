@@ -4,44 +4,58 @@ import 'package:sdk/xlocal.dart';
 class XLocal extends XBaseLocal {
   final _dict = {
     AppLanguge.en: {
-      'go_work': 'go work',
-      'off_work': 'Get off work',
-      'going_out': 'Going out',
-      'overtime': 'Overtime',
-      'confirm': 'Confirm'
+      'punchin': 'Punchin',
+      'punchout': 'Punchout',
+      'repose': 'Repose',
+      'resume': 'Resume',
+      'confirm': 'Confirm',
+      'cancel': 'Cancel'
     },
     AppLanguge.fr: {
-      'go_work': 'go work',
-      'off_work': 'Get off work',
-      'going_out': 'Going out',
-      'overtime': 'Overtime',
-      'confirm': 'Confirme'
+      'punchin': 'Travailler',
+      'punchout': 'Quitter',
+      'repose': 'Repose',
+      'resume': 'Sup',
+      'confirm': 'Confirmation',
+      'cancel': 'Cancel'
     },
     AppLanguge.zh: {
-      'go_work': '上班',
-      'off_work': '下班',
-      'going_out': '外出',
-      'overtime': '加班',
-      'confirm': '确认'
+      'punchin': '上班',
+      'punchout': '下班',
+      'repose': '休息',
+      'resume': '加班',
+      'confirm': '确认',
+      'cancel': '取消'
     },
     AppLanguge.ko: {
-      'go_work': '출근',
-      'off_work': '퇴근',
-      'going_out': '외출 및 이동',
-      'overtime': '초과 근무',
-      'confirm': '확인'
+      'punchin': '출근',
+      'punchout': '퇴근',
+      'repose': '휴식',
+      'resume': '초과근무',
+      'confirm': '확인',
+      'cancel': '취소'
     },
     AppLanguge.ja: {
-      'go_work': '仕事へ行く',
-      'off_work': '仕事を切り上げる',
-      'going_out': '外出先から',
-      'overtime': '残業時間',
-      'confirm': '確認事項'
+      'punchin': '仕事へ行',
+      'punchout': '仕事を切',
+      'repose': '休憩',
+      'resume': '残業時間',
+      'confirm': '確認事項',
+      'cancel': 'キャンセル'
     },
   };
   Map<String, Map<String, String>> get keys => _dict;
 
   @override
   // TODO: implement name
-  String get name => 'clock_';
+  String get name => 'option_';
+
+  @override
+  String? getTranslation(String key, String languageCode) {
+    if (_dict.containsKey(languageCode) &&
+        _dict[languageCode]!.containsKey(key)) {
+      return _dict[languageCode]![key];
+    }
+    return null;
+  }
 }

@@ -17,11 +17,12 @@ class OptionView extends XView<OptionController> {
   @override
   Widget build(BuildContext context) {
     final List<List<Widget>> cards = List.generate(
-      8,
+      4,
       (index) => Card(
         child: Obx(() => ElevatedButton(
               onPressed: () {
-                ctl.selectedIndex.value = index;
+                ctl.updateSelectedIndex(index);
+                print(ctl.selectedIndex.value);
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: ctl.selectedIndex.value == index
@@ -130,7 +131,7 @@ class OptionView extends XView<OptionController> {
               children: [
                 ElevatedButton.icon(
                   icon: Icon(Icons.check_circle, size: 50.sp),
-                  label: Text('Confirm', style: TextStyle(fontSize: 20.sp)),
+                  label: Text('confirm'.tr, style: TextStyle(fontSize: 20.sp)),
                   style: ElevatedButton.styleFrom(
                     foregroundColor: Colors.white,
                     backgroundColor: Color(0xFF1A9E2F),
@@ -142,7 +143,7 @@ class OptionView extends XView<OptionController> {
                 ),
                 ElevatedButton.icon(
                   icon: Icon(Icons.cancel, size: 50.sp),
-                  label: Text('Cancel', style: TextStyle(fontSize: 20.sp)),
+                  label: Text('cancel'.tr, style: TextStyle(fontSize: 20.sp)),
                   style: ElevatedButton.styleFrom(
                     foregroundColor: Colors.white,
                     backgroundColor: Colors.red,

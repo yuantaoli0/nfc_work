@@ -15,59 +15,13 @@ class HomeView extends XView<HomeController> {
     appLanguge.addLocal(XLocal());
   }
 
-
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       backgroundColor: backgroudColor,
       body: SafeArea(
         child: Row(
           children: [
-            // FutureBuilder<bool>(
-            //   future: NfcManager.instance.isAvailable(),
-            //   builder: (context, ss) => ss.data != true
-            //       ? Center(child: Text('NfcManager.isAvailable(): ${ss.data}'))
-            //       : Expanded(
-            //           flex: 1,
-            //           child: Column(
-            //             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            //             children: [
-            //               Expanded(
-            //                 flex: 2,
-            //                 child: Container(
-            //                   margin: EdgeInsets.all(4),
-            //                   constraints: BoxConstraints.expand(),
-            //                   decoration: BoxDecoration(border: Border.all()),
-            //                   child: SingleChildScrollView(
-            //                     child: ValueListenableBuilder<dynamic>(
-            //                       valueListenable: ctl.result,
-            //                       builder: (context, value, _) =>
-            //                           Text('${value ?? ''}'),
-            //                     ),
-            //                   ),
-            //                 ),
-            //               ),
-            //               Expanded(
-            //                 flex: 3,
-            //                 child: GridView.count(
-            //                   padding: EdgeInsets.all(4),
-            //                   crossAxisCount: 2,
-            //                   childAspectRatio: 4,
-            //                   crossAxisSpacing: 4,
-            //                   mainAxisSpacing: 4,
-            //                   children: [
-            //                     ElevatedButton(
-            //                       child: Text('Tag Read'),
-            //                       onPressed: ctl.tagRead,
-            //                     ),
-            //                   ],
-            //                 ),
-            //               ),
-            //             ],
-            //           ),
-            //         ),
-            // ),
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.only(left: 40),
@@ -137,14 +91,46 @@ class HomeView extends XView<HomeController> {
                 ),
               ),
             ),
-
-            Expanded(
-              flex: 3,
-              child: SvgPicture.asset(
-                'assets/icons/nfc_logo.svg', // 替换为您的SVG文件路径
-                width: 500.w, // 设置宽度
-                height: 500.h, // 设置高度
-              ),
+            Column(
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(left: 30.r, top: 50.h),
+                  child: Container(
+                    width: 200.w,
+                    height: 80.h,
+                    child: TextButton.icon(
+                      onPressed: () {
+                        ctl.leaveofAbsence();
+                      },
+                      icon: const Icon(
+                        Icons.date_range,
+                        color: Colors.white,
+                      ),
+                      label: Text(
+                        'absence'.tr,
+                        style: const TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                      style: TextButton.styleFrom(
+                        backgroundColor: primaryColor,
+                        side: BorderSide(
+                          color: SecondaryColor, // 边框颜色
+                          width: 5.h, // 边框宽度
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  flex: 3,
+                  child: SvgPicture.asset(
+                    'assets/icons/nfc_logo.svg',
+                    width: 500.w,
+                    height: 500.h,
+                  ),
+                ),
+              ],
             ),
           ],
         ),

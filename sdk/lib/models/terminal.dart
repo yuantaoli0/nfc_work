@@ -14,11 +14,19 @@ class Terminal extends NetBase {
 
   bool hasPermission(String url) {
     if (this['permissions'] != null) {
-      return this['permissions'].indexWhere((element) => element['url'] == url) >= 0;
+      return this['permissions']
+              .indexWhere((element) => element['url'] == url) >=
+          0;
       //return this['permissions'].indexOf(url) >= 0;
     } else {
       return false;
     }
+  }
+
+  punchCard(String card, String punchedType) async {
+      var res = await putHttp(
+          '/employe/punchCard/$card', {'punchedType': punchedType});
+      return res;
   }
 
   @override

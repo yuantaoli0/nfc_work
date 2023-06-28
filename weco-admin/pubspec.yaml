@@ -37,7 +37,9 @@ dependencies:
   nfc_manager: ^3.2.0
   carousel_slider: ^4.0.0
   dots_indicator: ^2.1.1
+  flutter_tts: ^3.2.2
   async: ^2.8.2
+  intl: ^0.17.0
   flutter_localizations: 
     sdk: flutter 
   sdk:
@@ -56,6 +58,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -86,6 +89,11 @@ flutter:
     - assets/images/weshop-logo.jpeg
     - assets/images/weshop_logo.png
     - assets/images/smile.png
+    - assets/images/sad.png
+    - assets/images/good-night.png
+    - assets/images/useravatar.png
+    - assets/images/absentism.png
+    - assets/images/heart.png
 
 
 

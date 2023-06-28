@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/tao/Epitech_masterII/Flutter_master/work_at/weco-admin/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/Users/tao/Epitech_masterII/Flutter_master/nfc_work/weco-admin/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
                     "source": "/Users/tao/.gradle/caches/transforms-3/3db694473890d00d37184af94df24c4c/transformed/media-1.0.0/res/values-v24/values-v24.xml",

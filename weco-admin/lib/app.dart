@@ -9,7 +9,7 @@ class AppController extends SDKController {
   @override
   void onInit() async {
     //ScreenUtil.setContext(Get.context!);
-    initService('wcwd45e430a5ba2ab1ef').then((r) {
+    initService('wcw45e430a5ba37b1b').then((r) {
       if (r == true) {
         //if (Platform.isAndroid) {
         //SystemChrome.setEnabledSystemUIOverlays([]);

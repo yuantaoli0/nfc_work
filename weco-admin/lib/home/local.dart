@@ -6,13 +6,15 @@ class XLocal extends XBaseLocal {
     AppLanguge.en: {
       'clock_login': 'please clock in',
       'error_title': 'Error',
-      'error': 'card not recognized. Please make sure your card is correct and try again.'
+      'error': 'card not recognized. Please make sure your card is correct and try again.',
+      'absence': 'Leave of Absence'
     },
     AppLanguge.fr: {
       'clock_login': 'Veuillez pointer',
     },
     AppLanguge.zh: {
       'clock_login': '请打卡',
+      'absence': '请假'
     },
     AppLanguge.ko: {
       'clock_login': '출근하세요',

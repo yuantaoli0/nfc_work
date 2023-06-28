@@ -6,6 +6,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nfc_manager/nfc_manager.dart';
+import 'package:sdk/models/terminal.dart';
 import 'local.dart';
 
 class HomeController extends GetxController {
@@ -13,7 +14,8 @@ class HomeController extends GetxController {
   ValueNotifier<dynamic> result = ValueNotifier(null);
   RxBool cardReadError = RxBool(false);
 
-  //  appLanguge.addLocal(XLocal());
+  RxString message = ''.obs;
+  RxString avatarUser = ''.obs;
 
   @override
   void onInit() {
@@ -30,6 +32,10 @@ class HomeController extends GetxController {
     NfcManager.instance.startSession(onDiscovered: (NfcTag tag) async {
       result.value = tag.data;
       NfcManager.instance.stopSession();
+
+      Terminal terminal = Terminal(tag.data);
+
+      //读取打卡num
       if (tag != null &&
           tag.data != null &&
           tag.data.containsKey('mifareclassic') &&
@@ -40,8 +46,30 @@ class HomeController extends GetxController {
             .encode(tag.data['mifareclassic']['identifier'].reversed.toList());
         uid = int.tryParse(uid, radix: 16).toString();
         uid = uid.padLeft(10, '0');
-        print("----------------------------$uid");
-        Get.toNamed('/option');
+        //读取后台打卡信息
+        var punchCardResult = await terminal.punchCard(uid, "");
+        message.value = punchCardResult['message'];
+        var data = punchCardResult['data'];
+        var punchTypes = data['punchTypes'];
+
+        avatarUser.value = data['employe']['avatarUrl'].toString();
+
+        print(punchCardResult);
+        print('message--------------$message');
+        print('punchedAt--------------$avatarUser');
+        print('punchTypes--------------$punchTypes');
+
+        //如果punchTypes是空的跳转到result页面
+        if (punchTypes != null && punchTypes.isNotEmpty) {
+          Get.toNamed('/option', arguments: {
+            'punchTypes': punchTypes,
+            'message': message,
+            'avatarUser': avatarUser
+          });
+        } else {
+          Get.toNamed('/result',
+              arguments: {'message': message, 'avatarUser': avatarUser});
+        }
         cardReadError.value = false;
       } else {
         cardReadError.value = true;
@@ -63,75 +91,7 @@ class HomeController extends GetxController {
     });
   }
 
-  // result.addListener(
-  //   () {
-  //     if (result.value != null &&
-  //         currentTime.value.hour >= 8 &&
-  //         currentTime.value.hour <= 18) {
-  //       // tagRead();
-  //       Get.toNamed('/option');
-  //     }
-  //   },
-  // );
-
-  void tagRead() {
-    NfcManager.instance.startSession(onDiscovered: (NfcTag tag) async {
-      result.value = tag.data;
-      NfcManager.instance.stopSession();
-    });
-
-    String jsons = jsonEncode(result.value);
-    String formattedJsons =
-        JsonEncoder.withIndent('  ').convert(jsonDecode(jsons));
-
-    print(formattedJsons);
-
-    if (formattedJsons != null) {
-      Map<String, dynamic> data = jsonDecode(formattedJsons);
-
-      // Access the values
-      Map<String, dynamic> mifareClassic = data['mifareclassic'];
-      List<int> identifier =
-          (mifareClassic['identifier'] as List<dynamic>).cast<int>();
-
-      int blockCount = mifareClassic['blockCount'];
-      int maxTransceiveLength = mifareClassic['maxTransceiveLength'];
-      int sectorCount = mifareClassic['sectorCount'];
-      int size = mifareClassic['size'];
-      int timeout = mifareClassic['timeout'];
-      int type = mifareClassic['type'];
-
-      Map<String, dynamic> nfca = data['nfca'];
-      List<int> nfcaIdentifier =
-          (nfca['identifier'] as List<dynamic>).cast<int>();
-
-      List<int> atqa = (nfca['atqa'] as List<dynamic>).cast<int>();
-      int nfcaMaxTransceiveLength = nfca['maxTransceiveLength'];
-      int sak = nfca['sak'];
-      int nfcaTimeout = nfca['timeout'];
-
-      Map<String, dynamic> ndefformatable = data['ndefformatable'];
-      List<int> ndefformatableIdentifier =
-          (ndefformatable['identifier'] as List<dynamic>).cast<int>();
-
-      // Use the values as needed
-      print(identifier); // [234, 69, 83, 3]
-      print(blockCount); // 64
-      print(maxTransceiveLength); // 253
-      print(sectorCount); // 16
-      print(size); // 1024
-      print(timeout); // 618
-      print(type); // 0
-
-      print(nfcaIdentifier); // [234, 69, 83, 3]
-      print(atqa); // [4, 0]
-      print(nfcaMaxTransceiveLength); // 253
-      print(sak); // 8
-      print(nfcaTimeout); // 618
-
-      print(ndefformatableIdentifier); // [234, 69, 83, 3]
-    } else {
-      print("NfcManager.isAvailable()");
-    }
+  void leaveofAbsence() {
+    Get.toNamed('/leaveconfirmation');
   }
 }

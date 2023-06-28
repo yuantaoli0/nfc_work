@@ -29,6 +29,7 @@ class Employe extends NetBase {
     this['birthday'] = dt?.toIso8601String();
   }
 
+
   @override
   Future<bool> reload() async {
     if (isNew) {
